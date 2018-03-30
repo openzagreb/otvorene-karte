@@ -30,11 +30,11 @@ var MapsLib = MapsLib || {}; MapsLib.schemaVersion = 2;
     // See https://developers.google.com/fusiontables/docs/v1/migration_guide for more info
 
     // The encrypted Table ID of your Fusion Table (found under File => About)
-    MapsLib.fusionTableId = "1kYnzigkINigpw9Uj91-G4tSQdNmUmCZtSmx90ZqI";
+    MapsLib.fusionTableId = "1PbAvbSz7vMpVe96uvbBPY6ydw72EeLr39lpA_Q5r";
 
     // *New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
     // *Important* this key is for demonstration purposes. please register your own.
-    MapsLib.googleApiKey ="AIzaSyAMVBSXes-6P-gWaxRj20GK8NT6WDVpozM";
+    MapsLib.googleApiKey ="AIzaSyDtpYdSFSIdb-pEaCvfakbuAXG8wFc6s94";
     
 
     // DONE!  YOU COULD DELETE EVERYTHING AFTER THIS POINT AND STILL HAVE A WORKING APP.
@@ -248,10 +248,10 @@ $.extend(MapsLib, {
     defaultMapBounds: {
 
         // Use [latitude, longitude] or address
-        center: "San Francisco, CA",
+        center: "Zagreb, Hrvatska",
 
         // "X miles" or "X meters"
-        radius: "6 miles"
+        radius: "10000 meters"
     },
 
     // Set useNearbyLocation to false if you don't want to get the user's location.
@@ -261,7 +261,7 @@ $.extend(MapsLib, {
         // If true: use nearby location only if we're within default map bounds
         //          otherwise, post boundsExceededMessage (if non-empty) and use mapDefaultCenter.
         onlyWithinDefaultMapBounds: true,
-        boundsExceededMessage:      "Your location is far away from San Francisco.    Defaulting to city limits.",
+        boundsExceededMessage:      "Your location is far away.    Defaulting to city limits.",
 
         // use this zoom radius if starting at nearby location
         nearbyZoomRadius:           "200 meters",

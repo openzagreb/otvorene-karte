@@ -941,12 +941,12 @@ $.extend(MapsLib, {
         var settings = MapsLib.searchPage;
         if (settings.addressShow)
         {
-            html.push("<label for='search_address'>Address / Intersection:</label>");
-            html.push("<input class='input-block-level' data-clear-btn='true' id='search_address' placeholder='defaults to map center' type='text' />");
+            html.push("<label for='search_address'>U blizini adrese:</label>");
+            html.push("<input class='input-block-level' data-clear-btn='true' id='search_address' placeholder='normalno je to centar karte' type='text' />");
         }
         if (settings.distanceFilter.entries.length > 0)
         {
-            html.push("<hr><label for='search_radius'>Within:</label>");
+            html.push("<hr><label for='search_radius'>unutar:</label>");
             html.push("<select class='input-small' id='search_radius'>");
             var distances = settings.distanceFilter.entries;
             for (var i = 0; i < distances.length; i++)
@@ -1026,15 +1026,15 @@ $.extend(MapsLib, {
                     var safename = MapsLib.safeField(cdata.column);
                     MapsLib.searchColumns.push(cdata.column);
                     var comparator = "=";
-                    var placeholder = "Exact match";
+                    var placeholder = "traži točnu frazu";
                     if (cdata.exact_match)
                     {
-                        placeholder = "Exact match (case-sensitive)";
+                        placeholder = "traži točnu frazu (case-sensitive)";
                     }
                     else if (MapsLib.isStringColumn(cdata.column))
                     {
                         comparator = "CONTAINS IGNORING CASE";
-                        placeholder = "Match anything containing this text";
+                        placeholder = "traži sve što sadrži ovaj tekst";
                     }
                     html.push("<hr><label for='sc_" + safename + "'>" + cdata.label + ":</label>");
                     html.push("<input class='input-block-level' data-clear-btn='true' data-ref='column' data-field='" + 
@@ -1933,4 +1933,3 @@ $.extend(MapsLib, {
     // This also applies to the convertToPlainString function above
     //-----end of custom functions-----------------------------------------------
 });
-

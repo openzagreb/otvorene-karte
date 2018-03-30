@@ -29,8 +29,8 @@ var MapsLib = MapsLib || {}; MapsLib.schemaVersion = 2;
     // Using v1 Fusion Tables API
     // See https://developers.google.com/fusiontables/docs/v1/migration_guide for more info
 
-    // The encrypted Table ID of your Fusion Table (found under File => About)
-    MapsLib.fusionTableId = "1R2EAgrKV9BL-oxpsT8VU8I1X0VKtlmaUwsqVMZUw";
+    // The encrypted Table ID of your Fusion Table (found under File => About); TableId Grad Zagreb prostori 13xmU6wANRJb0Niqcdz5Tr0xWh4AyV0yN10xMxPc
+    MapsLib.fusionTableId = "1mlwjqBOKAotZYJTeUW0oDgfpprG4X6oN5FOpnbEW";
 
     // *New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
     // *Important* this key is for demonstration purposes. please register your own.
@@ -45,6 +45,17 @@ var MapsLib = MapsLib || {}; MapsLib.schemaVersion = 2;
 
 
 $.extend(MapsLib, {
+
+// Contents of the About Page.  You can use "{title}" to insert your title.
+    aboutPage: " \
+        <h3>O projektu {title}</h3> \
+        <p>Ovo je projekt grupe developera Otvoreni Zagreb i koristi otvoreni kod (<a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/License' target='_blank'>MIT License</a>). Napravljeno je za jednostavnije pronalaženje knjižnica u gradu Zagrebu.</p> \
+        <p>Pull request je dobrodošao! <a href='https://github.com/sfbrigade/Mobile-Fusion-Tables' target='_blank'>Potraži na GitHubu</a>.</p> \
+        ",
+
+		nearbyPinInfobox: "Vi ste ovdje",
+
+        center: "Zagreb, Hrvatska",
 
 /*
 

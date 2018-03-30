@@ -5,16 +5,13 @@ Mobile Fusion Tables
 
 A mobile-ready template using Fusion Tables and jQuery Mobile, originally based on Derek Eder's [Fusion Table Searchable Map Template](https://github.com/derekeder/FusionTable-Map-Template).
 
-This is an SF Brigade project for Code for America. Started by Mark Brenig-Jones, completed by Rego Sen, with contributions from Sidney Zhang and Andrew Byrne.
+This is an Open Zagreb project for Code for Croatia. Started during CodeAcross 2014.
 
 Demos
 -----
 
-- US Health Centers: http://codeforsanfrancisco.org/Mobile-Fusion-Tables/demo-USHealthCenters.html
-- SF Bank Locations: http://codeforsanfrancisco.org/Mobile-Fusion-Tables/demo-SFBanks.html
-- SF Restaurant Inspections: http://codeforsanfrancisco.org/Mobile-Fusion-Tables/demo-SFInspections.html
-- SF Liquefaction Data: http://codeforsanfrancisco.org/Mobile-Fusion-Tables/demo-SFLiquefaction.html
-- SFCTA Projects: http://codeforsanfrancisco.org/Mobile-Fusion-Tables/demo-MyStreetSF.html
+- Knjiznice Grada Zagreba: http://zagreb.codeforcroatia.org/otvorene-karte/kgz.html
+- SF Bank Locations: http://zagreb.codeforcroatia.org/otvorene-karte/imovina-zagreb-2011.html
 
 Here are some web apps that now use Mobile Fusion Tables:
 
